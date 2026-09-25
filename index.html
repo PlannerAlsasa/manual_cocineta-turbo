@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>Manual del Usuario - Cocineta Turbo ALSASA</title>
+  <meta name="description" content="Manual del usuario de Cocineta Turbo ALSASA. Modelos QUEMJETCA y QUEMALUMCA.">
+  <style>
+    :root{
+      --bg:#f5f5f3;
+      --card:#ffffff;
+      --ink:#161616;
+      --muted:#5f6368;
+      --line:#dedede;
+      --danger:#b00020;
+      --warn:#a45a00;
+      --accent:#111111;
+      --soft:#f0f0ee;
+      --max:980px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.6;
+    }
+    a{color:inherit}
+    .wrap{width:min(calc(100% - 28px), var(--max)); margin:auto}
+    header{
+      background:#111;
+      color:#fff;
+      padding:34px 0 28px;
+      border-bottom:6px solid #000;
+    }
+    .brand{
+      font-size:clamp(34px,7vw,64px);
+      font-weight:800;
+      letter-spacing:-2px;
+      text-transform:lowercase;
+      line-height:1;
+    }
+    .tagline{font-size:18px; margin-top:4px; opacity:.9}
+    h1{font-size:clamp(30px,5vw,52px); line-height:1.05; margin:24px 0 8px}
+    .subtitle{font-size:18px; max-width:760px; color:#e8e8e8}
+    .models{
+      display:flex; gap:10px; flex-wrap:wrap; margin-top:18px
+    }
+    .pill{
+      display:inline-block; border:1px solid #fff; border-radius:999px;
+      padding:7px 12px; font-weight:700; font-size:14px
+    }
+    .quick{
+      background:#fff;
+      border-bottom:1px solid var(--line);
+      position:sticky; top:0; z-index:10;
+      box-shadow:0 4px 16px rgba(0,0,0,.07);
+    }
+    .quick-inner{
+      display:flex; gap:8px; overflow-x:auto; padding:10px 0;
+      scrollbar-width:thin;
+    }
+    .quick a{
+      white-space:nowrap; text-decoration:none; border:1px solid var(--line);
+      border-radius:999px; padding:8px 12px; background:#fff; font-size:14px
+    }
+    main{padding:26px 0 50px}
+    section{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:clamp(18px,4vw,34px);
+      margin:0 0 18px;
+      box-shadow:0 8px 24px rgba(0,0,0,.04);
+      scroll-margin-top:82px;
+    }
+    h2{font-size:clamp(24px,4vw,34px); line-height:1.15; margin:0 0 18px}
+    h3{font-size:21px; margin:22px 0 10px}
+    p{margin:10px 0}
+    ul,ol{padding-left:24px}
+    li{margin:7px 0}
+    .alert{
+      border-left:6px solid var(--danger);
+      background:#fff4f4;
+      padding:16px 18px;
+      border-radius:10px;
+      margin:14px 0;
+    }
+    .warn{
+      border-left-color:var(--warn);
+      background:#fff7ea;
+    }
+    .note{
+      border-left:6px solid #444;
+      background:#f5f5f5;
+      padding:16px 18px;
+      border-radius:10px;
+      margin:14px 0;
+    }
+    .grid{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .mini{
+      background:var(--soft); border:1px solid var(--line); border-radius:12px; padding:14px
+    }
+    .mini strong{display:block; margin-bottom:4px}
+    .hero-actions{
+      display:flex; flex-wrap:wrap; gap:10px; margin-top:22px
+    }
+    .btn{
+      display:inline-block; text-decoration:none; background:#111; color:#fff;
+      border-radius:10px; padding:12px 16px; font-weight:700;
+    }
+    .btn.secondary{background:#fff;color:#111;border:1px solid #111}
+    .contact{
+      text-align:center;
+      background:#111; color:#fff; border-color:#111;
+    }
+    .contact a{color:#fff}
+    footer{
+      text-align:center; color:var(--muted); padding:0 14px 36px; font-size:13px
+    }
+    .top{
+      display:inline-block; margin-top:14px; font-weight:700; text-decoration:none
+    }
+    @media (max-width:640px){
+      .wrap{width:min(calc(100% - 18px), var(--max))}
+      header{padding-top:26px}
+      section{border-radius:12px}
+    }
+    @media print{
+      .quick,.hero-actions,.top{display:none!important}
+      body{background:#fff}
+      section{box-shadow:none; break-inside:avoid; border-color:#ccc}
+      header{background:#fff;color:#000;border-bottom:2px solid #000}
+      .subtitle{color:#333}
+    }
+  </style>
+</head>
+
+<body id="inicio">
+<header>
+  <div class="wrap">
+    <div class="brand">alsasa</div>
+    <div class="tagline">el placer en tu hogar</div>
+    <h1>COCINETA TURBO<br>MANUAL DEL USUARIO</h1>
+    <p class="subtitle">Alertas de seguridad, instrucciones de ensamblaje y operación, mantenimiento general y almacenaje.</p>
+    <div class="models">
+      <span class="pill">MODELO: QUEMJETCA</span>
+      <span class="pill">MODELO: QUEMALUMCA</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn" href="#seguridad">Leer manual</a>
+      <a class="btn secondary" href="manual.pdf" target="_blank" rel="noopener">Abrir PDF original</a>
+    </div>
+  </div>
+</header>
+
+<nav class="quick" aria-label="Navegación del manual">
+  <div class="wrap quick-inner">
+    <a href="#seguridad">Seguridad</a>
+    <a href="#producto">Sobre el producto</a>
+    <a href="#operacion">Operación</a>
+    <a href="#ensamblaje">Ensamblaje</a>
+    <a href="#fugas">Prueba de fugas</a>
+    <a href="#posicionamiento">Posicionamiento</a>
+    <a href="#encendido">Encendido</a>
+    <a href="#garantia">Garantía</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section>
+  <div class="alert">
+    <strong>GUARDE ESTE MANUAL PARA REFERENCIA FUTURA.</strong><br>
+    NO PARA USO COMERCIAL.
+  </div>
+  <p>Este manual de instrucciones contiene información importante necesaria para el uso seguro y mantenimiento adecuado del aparato. Debe leer y seguir cuidadosamente todas las advertencias e instrucciones antes de ensamblar y utilizar el aparato.</p>
+  <p>Este manual es solo para productos ALSASA®. Si está utilizando un producto de otro fabricante, consulte el manual proporcionado con ese producto.</p>
+  <p>Use únicamente piezas de repuesto y accesorios aprobados por ALSASA® con este aparato.</p>
+</section>
+
+<section id="seguridad">
+  <h2>Símbolos y alertas de seguridad</h2>
+
+  <div class="grid">
+    <div class="mini"><strong>PELIGRO</strong>El no seguir estas instrucciones seguramente resultará en un incendio o explosión, lo que causará daños a la propiedad, lesiones personales o la muerte.</div>
+    <div class="mini"><strong>ADVERTENCIA</strong>Peligros o prácticas inseguras podrían resultar en daños severos a la propiedad, lesiones personales o la muerte.</div>
+    <div class="mini"><strong>CUIDADO</strong>Peligros o prácticas inseguras que podrían resultar en daños menores a la propiedad, lesiones personales o la muerte.</div>
+  </div>
+
+  <div class="alert">
+    <strong>SI HUELE A GAS:</strong>
+    <ul>
+      <li>Cierre el flujo de gas del aparato.</li>
+      <li>Apague cualquier llama abierta.</li>
+      <li>Si el olor persiste, manténgase alejado del aparato y llame inmediatamente a su departamento de bomberos.</li>
+    </ul>
+  </div>
+
+  <div class="alert">
+    <strong>PELIGRO</strong>
+    <ul>
+      <li>Nunca use este aparato sin supervisión.</li>
+      <li>Nunca use este aparato a menos de 3 m / 10 pies de cualquier estructura, material combustible u otro cilindro de gas.</li>
+      <li>Nunca sobrellene el recipiente de cocción con agua. Siga las instrucciones de este manual para establecer los niveles adecuados de agua.</li>
+      <li>Los líquidos calientes permanecen a temperaturas escaldantes mucho después del proceso de cocción.</li>
+      <li>Nunca toque el aparato de cocción hasta que los líquidos se hayan enfriado a 45°C / 115°F o menos.</li>
+      <li>Si ocurre un incendio, manténgase alejado del aparato y llame inmediatamente a su departamento de bomberos.</li>
+      <li>Este aparato no está diseñado para, ni debe ser utilizado como, un calentador de áreas.</li>
+      <li>No coloque un recipiente de cocción vacío en el aparato mientras esté en funcionamiento.</li>
+      <li>Nunca use utensilios de vidrio, plástico o cerámica con este aparato.</li>
+      <li>Mantenga el suministro de gas alejado de cualquier superficie calentada.</li>
+    </ul>
+  </div>
+
+  <div class="warn alert">
+    <strong>ADVERTENCIAS GENERALES</strong>
+    <ul>
+      <li>¡Operación solo por adultos responsables! El uso de alcohol, medicamentos recetados o sin receta puede afectar la capacidad para ensamblar correctamente u operar el aparato de manera segura.</li>
+      <li>No use el aparato para ningún otro propósito que no sea el previsto.</li>
+      <li>Este aparato es SOLO PARA USO EXTERIOR y no debe usarse en un edificio, garaje ni en ninguna otra área cerrada.</li>
+      <li>No use el aparato sobre o debajo de ningún balcón o terraza de un apartamento o condominio.</li>
+      <li>Este aparato no está diseñado para su uso en un barco o vehículo recreativo.</li>
+      <li>No intente encender este aparato sin antes seguir las instrucciones en este manual para un ensamblaje adecuado, colocación y prueba.</li>
+      <li>No se coloque sobre el aparato ni esté con la cabeza, el cuerpo o los brazos cuando lo encienda. El cabello suelto y la ropa pueden prenderse fuego.</li>
+      <li>Debe utilizarse el conjunto de manguera y regulador suministrado con este aparato.</li>
+      <li>Siempre use un termómetro en buen estado para conocer la temperatura del líquido de cocción.</li>
+      <li>Bajo la luz del sol o en otras luces brillantes, la llama puede no ser visible. Siempre tenga precaución alrededor de una llama encendida.</li>
+      <li>No mueva el aparato mientras esté en funcionamiento.</li>
+      <li>Evite golpear o impactar el aparato para prevenir derrames o salpicaduras de líquido de cocción caliente.</li>
+      <li>Mantenga a los niños y mascotas alejados del área de cocción en todo momento.</li>
+      <li>Tenga precaución al colocar cualquier cosa en un recipiente de cocción mientras el aparato está en funcionamiento. Nunca tire comida ni accesorios en el líquido caliente. Baje los alimentos y accesorios lentamente en el líquido de cocción para evitar salpicaduras o desbordes.</li>
+      <li>Siempre tenga cuidado al retirar la tapadera del recipiente para evitar quemaduras por vapor o líquidos de cocción calientes.</li>
+      <li>Siempre tenga a la mano un extintor de incendios tipo BC o ABC durante el funcionamiento.</li>
+      <li>En caso de incendio, llame inmediatamente al departamento de bomberos.</li>
+      <li>El aparato estará CALIENTE después de ser operado. NO TOQUE el marco ni el recipiente de cocción al encenderlo nuevamente o mover el quemador antes de que se haya enfriado.</li>
+    </ul>
+  </div>
+
+  <div class="note"><strong>RECUERDE:</strong> ¡PIENSE EN LA SEGURIDAD Y USE EL SENTIDO COMÚN!</div>
+</section>
+
+<section id="producto">
+  <h2>Sobre este producto</h2>
+  <p>Este aparato a gas tiene una mayor salida de calor que las estufas tradicionales de cocina. En este manual, se puede referir a él como “cocineta” o “aparato”.</p>
+  <p>La cocineta está diseñada para funcionar con un recipiente de cocción (olla, tina y arroceras). Esta cocineta solo debe utilizarse con la manguera y el regulador suministrados con este producto.</p>
+  <p>Este aparato está destinado únicamente para hervir o cocinar al vapor alimentos. Cualquier otro uso podría anular la garantía o crear una situación peligrosa.</p>
+</section>
+
+<section id="operacion">
+  <h2>Operación general</h2>
+  <ul>
+    <li>Siempre inspeccione el aparato y sus componentes antes de cada uso.</li>
+    <li>Asegúrese de que el aparato esté correctamente ensamblado y conectado al cilindro de GLP.</li>
+    <li>Inspeccione la manguera y el tanque en busca de señales de abrasión, desgaste, cortes o fugas.</li>
+    <li>Verifique que no haya nada obstruyendo el quemador.</li>
+    <li>Realice la prueba de fuga de gas antes de encender.</li>
+    <li>Prepare el área de cocción en una ubicación segura.</li>
+    <li>Siga las instrucciones de encendido/reencendido que se encuentran en este manual.</li>
+  </ul>
+
+  <h3>Llenado del recipiente de cocción</h3>
+  <ol>
+    <li>Asegúrese de que el recipiente esté centrado en el marco de la cocineta.</li>
+    <li>Llene el recipiente con agua hasta que la canasta esté aproximadamente sumergida a la mitad.</li>
+    <li>Después de que el agua se haya calentado adecuadamente, agregue el producto alimenticio cuidadosamente a la olla.</li>
+    <li>Agregue más agua según sea necesario. Esto afectará el tiempo de retorno al punto de ebullición.</li>
+  </ol>
+
+  <div class="note"><strong>NOTA:</strong> Siempre debe haber un mínimo de 8 cm / 3 pulgadas entre el nivel del agua y la parte superior del recipiente.</div>
+
+  <ul>
+    <li>Este aparato estará caliente durante y después de su uso; siempre use ropa protectora al operar el aparato.</li>
+    <li>Use manoplas o guantes aislantes para protegerse de las superficies calientes o salpicaduras de líquidos de cocción.</li>
+    <li>Use zapatos cerrados.</li>
+    <li>Controle cuidadosamente toda la actividad alrededor de la cocineta para evitar quemaduras u otras lesiones.</li>
+    <li>Controle la llama de la cocineta girando el regulador ajustable. Si es aplicable, ajuste la cortina de aire según las instrucciones para obtener una llama azul ideal.</li>
+    <li>Cuando termine de cocinar, apague el gas y siga las instrucciones de cuidado y mantenimiento.</li>
+    <li>Después de cocinar, continúe monitoreando el área. Nunca toque, mueva ni almacene el aparato o los líquidos de cocción antes de que se hayan enfriado.</li>
+  </ul>
+</section>
+
+<section id="ensamblaje">
+  <h2>Instrucciones de ensamblado</h2>
+  <p>Ensamblar esta cocineta cuidadosamente siguiendo estas instrucciones. Inspeccione el contenido de la caja para asegurarse de que todas las piezas estén incluidas y no estén dañadas.</p>
+  <p>Por favor, póngase en contacto con ALSASA® si alguna pieza parece dañada, faltante o inexacta. Se requerirá el comprobante de compra.</p>
+
+  <h3>Lista de partes necesarias</h3>
+  <ul>
+    <li>Cocineta</li>
+    <li>Sistema de gas</li>
+    <li>Tanque de gas (no incluido)</li>
+  </ul>
+
+  <h3>Herramientas no incluidas</h3>
+  <ul>
+    <li>Llave inglesa</li>
+    <li>Tenazas</li>
+  </ul>
+
+  <div class="alert">
+    <strong>PELIGRO</strong>
+    <ul>
+      <li>No intente mover, alterar ni desconectar el cilindro de LP mientras el aparato esté en uso.</li>
+      <li>Siempre asegure que el cilindro de LP esté en posición vertical.</li>
+      <li>Siempre desconecte el aparato y/o el cilindro de LP antes de moverlos.</li>
+      <li>Si el aparato no está en uso, debe cerrar el gas en el cilindro de LP.</li>
+      <li>Los cilindros de LP deben almacenarse al aire libre, fuera del alcance de los niños, y no deben almacenarse en edificios, garajes ni en áreas cerradas.</li>
+      <li>Solo los distribuidores calificados de gas LP deben llenar o reparar su cilindro de LP.</li>
+      <li>Solo se debe usar el conjunto de manguera y regulador suministrado con este aparato.</li>
+      <li>No intente desensamblar, alterar ni reparar ninguna parte del conjunto de manguera y regulador.</li>
+    </ul>
+  </div>
+
+  <h3>Regulador y manguera</h3>
+  <p>El regulador de válvula de manguera está diseñado para conectar el aparato a un cilindro de gas LP de 9.1 kg (20 libras). Lea y siga todas las instrucciones y advertencias en las etiquetas de seguridad de la manguera de suministro.</p>
+  <p>Si hay evidencia de abrasión, desgaste, cortes o fugas, el regulador debe ser reemplazado antes de poner en funcionamiento el aparato. Reemplace únicamente con el modelo suministrado por ALSASA.</p>
+</section>
+
+<section id="fugas">
+  <h2>Prueba de fuga de gas</h2>
+  <p>Realice una prueba de fuga de gas:</p>
+  <ul>
+    <li>Después de ensamblar su cocineta y antes de encenderla por primera vez, incluso si fue comprada completamente ensamblada.</li>
+    <li>Cada vez que se recargue el cilindro de gas LP, o si se reemplaza alguno de los componentes del sistema de gas.</li>
+    <li>Cada vez que se haya movido la cocineta.</li>
+    <li>Al menos una vez al año o si su cocineta no ha sido utilizada por más de 60 días.</li>
+  </ul>
+
+  <div class="note"><strong>NOTA:</strong> La prueba de fugas de gas debe realizarse en un área con iluminación adecuada para poder observar si se desarrollan burbujas. NO use una linterna para revisar la formación de burbujas.</div>
+
+  <h3>Cómo realizar una prueba de fugas de gas</h3>
+  <ol>
+    <li>Prepare una mezcla de 50% de agua y 50% de jabón líquido para lavar platos.</li>
+    <li>Gire la válvula del cilindro de gas LP a la posición de apagado (cerrado). Luego, gire la válvula de latón también a la posición de apagado (cerrado).</li>
+    <li>Para abrir el suministro de gas, gire la válvula del cilindro de gas LP una vuelta en dirección de apertura. El gas fluirá a través del regulador y se detendrá en la válvula de latón, que sigue cerrada.</li>
+    <li>Con un cepillo limpio, aplique la mezcla de agua con jabón en los puntos de conexión, carcasas del regulador, soldaduras del cilindro, longitud total de la manguera y conexión de la manguera a la cocina.</li>
+    <li>Inspeccione las áreas para detectar burbujas en crecimiento.</li>
+    <li>Abra la válvula de latón y deje que el gas circule por la manguera. No permita que el gas fluya más de 5 a 10 segundos.</li>
+    <li>Gire la válvula del cilindro de gas LP a la posición de cerrado. Luego, gire la válvula de latón a la posición de cerrado.</li>
+    <li>Apriete las conexiones que tengan fugas.</li>
+    <li>Repita la prueba de la mezcla de agua y jabón hasta que no se detecten fugas.</li>
+    <li>Después de estar seguro de que no hay fugas, gire el cilindro de gas LP.</li>
+    <li>Cierre la válvula. Espere 5 minutos para que se evacuen los vapores de gas antes de encender el quemador.</li>
+  </ol>
+
+  <div class="alert">
+    <strong>PELIGRO:</strong>
+    <ul>
+      <li>Si persisten burbujas de jabón durante cualquier parte de la prueba de fugas de gas, deje de usarla inmediatamente.</li>
+      <li>NO utilice la cocina si no puede detener las fugas de gas.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="posicionamiento">
+  <h2>Posicionamiento de la cocineta</h2>
+
+  <div class="alert">
+    <ul>
+      <li>Este aparato es portátil y no debe instalarse en armarios ni en ninguna otra carcasa cerrada.</li>
+      <li>Mantenga el área de cocción despejada y libre de cualquier material combustible, como tanques de gas LP de repuesto (llenos o vacíos), productos químicos domésticos, pintura, gasolina y otros vapores y líquidos inflamables.</li>
+      <li>Nunca encierre el aparato para bloquear el viento. Traslade su cocina a un lugar con menos viento o no lo utilice hasta que haya cesado el viento.</li>
+    </ul>
+  </div>
+
+  <ul>
+    <li>Elija un espacio exterior seguro, libre de materiales combustibles, para operar el aparato.</li>
+    <li>Coloque el aparato sobre una superficie nivelada, estable y no combustible, como ladrillo, hormigón o tierra.</li>
+    <li>Asegúrese de que el cilindro de gas LP esté completamente vertical y estable.</li>
+    <li>Antes de encenderlo, verifique la dirección del viento. Coloque la cocina a favor del viento del cilindro de gas LP.</li>
+    <li>Coloque el cilindro de gas LP a una distancia mínima de 50,8 cm (20 pulgadas) del aparato.</li>
+    <li>Mantenga el aparato a 3 m / 10 pies de estructuras y materiales combustibles.</li>
+  </ul>
+
+  <div class="warn alert">
+    <strong>ADVERTENCIA</strong>
+    <ul>
+      <li>No camine entre la cocina y el tanque de propano; la manguera de conexión crea un peligro de tropiezo.</li>
+      <li>No coloque el aparato debajo de construcciones combustibles sin protección ni ramas de árboles.</li>
+      <li>No intente mover el aparato ni el recipiente de cocción mientras cocina.</li>
+      <li>No coloque la cocina sobre madera, asfalto ni tapetes de plástico/goma, ya que podrían quemarse, ampollarse o derretirse.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="encendido">
+  <h2>Instrucciones de encendido</h2>
+  <p>Siga estas instrucciones para encender y volver a encender el aparato de forma segura y adecuada.</p>
+
+  <div class="warn alert">
+    <strong>PRECAUCIÓN</strong>
+    <ul>
+      <li>El regulador que viene con este aparato está equipado con un limitador de flujo de gas.</li>
+      <li>Si el aparato no enciende después de 2 o 3 intentos, cierre el suministro de gas y no intente utilizar el aparato hasta que se resuelva el problema.</li>
+    </ul>
+  </div>
+
+  <div class="alert">
+    <strong>ADVERTENCIA:</strong> Incluso si la llama se apaga, el tanque y el regulador seguirán permitiendo que salga algo de gas hasta que estén completamente cerrados. Debe dejar que el gas se evacue/disipe antes de volver a encenderlo.
+  </div>
+
+  <h3>Encendido del aparato</h3>
+  <ol>
+    <li>Antes de encender, apague completamente (cierre) la válvula del cilindro de gas LP y la válvula de latón para evitar cualquier flujo de gas.</li>
+    <li>Si la válvula de latón se deja en cualquier otra posición, se activará el dispositivo limitador de flujo de gas.</li>
+    <li>Abra el suministro de combustible girando lentamente la válvula del cilindro de gas LP una vuelta completa.</li>
+    <li>Coloque una cerilla o un encendedor largo sobre el tubo del quemador a chorro y abra lentamente el regulador para que fluya el gas. El quemador debería encenderse en menos de 5 segundos. Aplica para cocineta con quemador de aluminio.</li>
+    <li>Después de encender el quemador, abra completamente la válvula del cilindro de gas LP y controle la llama del chorro ajustando la válvula de latón.</li>
+    <li>Si el encendido no se produce en 5 segundos, apague completamente la válvula del cilindro de gas LP y la válvula de latón, espere 5 minutos y repita el procedimiento de encendido.</li>
+  </ol>
+
+  <h3>Cómo volver a encender el aparato</h3>
+  <p>Si el aparato se apaga accidentalmente, cierre completamente la válvula del cilindro de gas LP y la válvula de latón, espere 5 minutos para que el gas se evacue y repita los pasos 1 a 4 de las instrucciones de encendido.</p>
+</section>
+
+<section id="garantia">
+  <h2>Garantía</h2>
+  <p>ALSASA, S.A. de C.V. (“El Vendedor”) garantiza al comprador minorista original de este aparato, y a ninguna otra persona, que si este aparato es ensamblado y operado de acuerdo con las instrucciones impresas que lo acompañan, entonces, por un período de un (3) meses a partir de la fecha de compra, todas las piezas del aparato estarán libres de defectos de materiales y mano de obra.</p>
+  <p>El Vendedor puede requerir una prueba razonable de la fecha de compra a través de un minorista o distribuidor autorizado. Por lo tanto, se recomienda conservar su recibo de venta o factura.</p>
+  <p>Esta Garantía Limitada se limita exclusivamente al reemplazo de piezas que resulten defectuosas bajo condiciones normales de uso y servicio, y que el Vendedor determine, a su criterio razonable tras la inspección, que efectivamente presentan fallos de fabricación.</p>
+  <p>No se realizarán reparaciones ni reembolsos; la garantía será únicamente cambio por cambio.</p>
+  <p>Esta Garantía Limitada no cubre fallos o dificultades de funcionamiento debido a accidentes, abuso, mal uso, alteración, aplicación incorrecta, instalación inadecuada, mantenimiento o servicio inapropiado, ni la falta de mantenimiento rutinario y normal del aparato.</p>
+  <p>Además, la Garantía Limitada no cubre daños estéticos como rayones, desconchaduras, grietas, decoloración, óxido u otros daños causados por el clima después de la compra.</p>
+</section>
+
+<section class="contact">
+  <h2>Contacto</h2>
+  <p><strong>Aluminio de El Salvador S.A.</strong><br>
+  Carretera a Sonsonate, Km 28 1/2, Lourdes, Colón, El Salvador.</p>
+  <p><a href="https://www.alsasa.com/" target="_blank" rel="noopener">www.alsasa.com</a></p>
+  <p><a class="btn secondary" href="manual.pdf" target="_blank" rel="noopener">Abrir manual PDF</a></p>
+</section>
+
+<a class="top" href="#inicio">↑ Volver al inicio</a>
+
+</main>
+
+<footer>
+  Manual del Usuario - Cocineta Turbo ALSASA · Modelos QUEMJETCA / QUEMALUMCA
+</footer>
+</body>
+</html>
